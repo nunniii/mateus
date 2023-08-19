@@ -6,34 +6,22 @@
       box-sizing: border-box;
 }
 
-
 #animu {
       border-radius: .25rem;
-
-      /* position: absolute; */
-      /* top: 0; */
       left: 0;
       margin: 0;
-      /* width: 100vw; */
-
-      /* box-shadow: 0px 0px 4px whitesmoke; */
 
 }
-
 
 
 body {
       background-color:#100E15;
       color: #d3d3d3;
-
       -webkit-text-size-adjust: 100%;
       font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       display: flex;
-      /* justify-content: center; */
-
       word-break: break-word;
 }
-
 
 body::-webkit-scrollbar {
       width: 10px
@@ -42,7 +30,6 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {   
       background-color: darkgrey;   
 }                
-
 
 body{
       animation: init-background 2s ease;
@@ -53,15 +40,13 @@ a, span{
 }
 
 
-
 @keyframes init-background {
       0%{
             display: none;
             background-color: #d3d3d3;
             color: #d3d3d3;
             
-      }
-      
+      } 
 }
 
 @keyframes rest {
@@ -70,9 +55,6 @@ a, span{
       }
 }
 
-
-
-
 main{
 
       width: 100%;
@@ -80,23 +62,13 @@ main{
 
 #main-container{
       margin: 3.6rem 20rem;
-
-      width: 100%;
-
-      
+      width: 100%;  
 }
-
-
-
-
 
 .block{
       margin-top: 3rem;
       width: 100%;
 }
-
-
-
 
 a{
       color: #2563eb;
@@ -124,6 +96,7 @@ h1{
       font-size: 3em;
       font-weight: 700;
       line-height: 2.9rem;
+      margin-top: 1rem;
 
       white-space: nowrap;
     
@@ -198,66 +171,13 @@ svg{
 }
 
 
-
 /* NAV */
 
-             /* MENU */
-
-
-             div.menu{
-                  width: 1.5rem;
-                  height: .08rem;
-                  background: whitesmoke;
-                  margin: .5rem;
-
-                  border-radius: .25rem;
-             }
-
-
-
-
-
-
-            .some-tag{
-                  background-color: #374151;
-                  color: #d3d3d3;
-                  border-radius: 2rem;
-            
-                  padding: 0 1rem 0 1rem;
-            
-                  display: flex;
-                  align-items: center;
-                  height: 2rem;
-                  transition: .3s;
-            
-            }
-            
-            .some-tag p{
-                  margin-left: .4rem;
-                  font-size: 12pt;
-            }
-            
-            .some-tag:hover{
-                  background-color: #1F2937;
-                  transition: .3s;
-            }
-
-
-
 header nav{
-
       margin: 0rem 0 3.5rem 0;
-
       border-radius: .4rem;
-
       width: 100%;
-
-
       display: flex;
-
-      justify-content: space-between;
-
-      
 }
 
 header nav ul{
@@ -265,17 +185,13 @@ header nav ul{
       display: flex;
       justify-content: space-between;
       list-style: none;
-
       color: white;
 }
 
-header nav ul li{
 
+header nav ul li{
       padding: .3rem 1rem .3rem 1rem;
       border-radius: 1rem;
-
-      
-
 }
 
 header nav ul li:hover{
@@ -285,171 +201,26 @@ header nav ul li:hover{
 header nav ul li a{
       text-decoration: none;
       color: white;
-      font-size: 12pt;
-
+      font-size: 1.2rem;
 }
 
 #btn-menu-mobile{
       display: none;
-
       background-color: #00000000;
       border: none;
       outline: none;
-
       height: 2.7rem;
-
       padding: 0 0 0 .3rem;
-
 }
-
-
-
-
-@media (max-width: 600px){
-      #btn-menu-mobile{
-            display: block;
-
-      }
-
-      #nav-menu{
-            display: none;
-      }
-
-      #nav-menu.active{
-            display: flex;
-            flex-direction: column;
-            
-
-      }
-
-      header nav{
-            background-color: #181b20;
-      }
-
-      header nav ul{
-            display: flex;
-            justify-content: space-between;
-
-            list-style: none;
-      
-            color: white;
-      }
-
-    
-      
-      header nav ul li{
-            padding: .3rem 0 .3rem 0;
-
-            margin: .5rem 0 0 .5rem;
-
-            
-      }
-
-      header nav ul li:first-child{
-            margin-top: .7rem;
-      }
-
-      header nav ul li a{
-
-            font-size: 12pt;
-            margin: .5rem 0 .5rem 0;
-
-            text-decoration: none;
-            color: white;
-
-
-      }
-
-      
-}
-
-
-
-
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap');
 
-table{
-      width: 100%;
-      font-family: 'Fira Code', monospace;
-}
-
-table th{
-      display: none;
-}
-
-table td:last-child{
-      width: 100%;
-}
-
-table td p, span{
-      margin: 0 .5rem 0 .5rem;
-}
-
-table td p{
-      color: #adadad60;
-}
-
-
-table td span{
-      color: #d3d3d3;
-      font-weight:600;
-}
-
-table .td-icon svg{
-      width: 3rem;
-      height: 3rem;
-
- 
-}
-
-
-table tr td{
-      
-      border: .1rem solid #37415155;
-
-      width: 7rem;
-      height: 7rem;
-
-      align-items: flex-start;
-      
-
-}
-
-table tr td:first-child{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-}
-
-table td:last-child{
-      border-radius: 0 .5rem .5rem 0;
-}
-
-table td:first-child{
-      border-radius: .5rem 0 0 .5rem;
-}
-
-
-
-
 @media only screen and (max-width: 600px) {
       h1{
-
-            font-size: 2.6em;
-      
-          
+            font-size: 2.6em;  
       }
       #main-container{
             margin: 2rem 1rem ;
-      }
-
-      header nav{
-            background-color: #181b20;
-            flex-direction: column;
-
       }
 }
 
@@ -457,86 +228,45 @@ table td:first-child{
 
 @media only screen and (max-width: 1200px) {
       h1{
-
-            font-size: 2.6em;
-      
-          
+            font-size: 2.6em;  
       }
       #main-container{
             margin: 4rem 1.5rem;
-      }
-      
+      }   
 }
 
 
 @media only screen and (max-width: 700px) {
-
-      
-
-      h1{
-
-            font-size: 2.6em;
-      
-          
-      }
-
-      #main{
-            margin: 4rem 1.5rem;
-      }
-
-
-      #btn-menu-mobile{
+      span.gradient{
             display: block;
-
+            margin-top: 5px;
       }
-
-      #nav-menu{
-            display: none;
-      }
-
-      #nav-menu.active{
+      h1{
+            font-size: 2.6em;
+            display: block;
             display: flex;
-            flex-direction: column;
-
+            flex-direction: column; 
+            text-align: left;      
       }
-
-      header nav{
-            background-color: #181b20;
-            flex-direction: column;
-
+      #main{
+            margin: 4rem 2rem;
       }
-
+      nav{
+            margin: 1rem 0 1rem 0 !important;
+      }
       header nav ul{
             display: flex;
             justify-content: space-between;
-
             list-style: none;
-      
             color: white;
       }
-
-
-      
-      header nav ul li{
-            padding: .3rem 0 .3rem 0;
-
-            margin: .5rem 0 0 .5rem;
-
-      }
-
-      header nav ul li:first-child{
-            margin-top: .7rem;
-      }
-
       header nav ul li a{
 
-            font-size: 12pt;
+            font-size: 24px;
 
             margin: .5rem 0 .5rem 0;
 
             text-decoration: none;
             color: white;
       }
-
 }
-
