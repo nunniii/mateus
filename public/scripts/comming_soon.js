@@ -4,5 +4,5 @@ function comming_soon(){
 }
 
 function talk(){
-    window.alert("O.o_ps =( \nPlease, DM me on Twitter (@nunitoo_) or email me at mateusnss@proton.me")
+    window.alert("O.o_ps =( \nPlease, DM me on Twitter or email me at mateusnss@proton.me")
 }
