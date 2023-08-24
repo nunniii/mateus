@@ -33,11 +33,23 @@ body::-webkit-scrollbar-thumb {
 }                
 
 body{
-      animation: init-background 2s ease;
+      -webkit-animation: init-background 2s ease;
+              animation: init-background 2s ease;
 }
 
 a, span{
-      animation: rest 1s linear;
+      -webkit-animation: rest 1s linear;
+              animation: rest 1s linear;
+}
+
+
+@-webkit-keyframes init-background {
+      0%{
+            display: none;
+            background-color: #d3d3d3;
+            color: #d3d3d3;
+            
+      } 
 }
 
 
@@ -48,6 +60,12 @@ a, span{
             color: #d3d3d3;
             
       } 
+}
+
+@-webkit-keyframes rest {
+      0%{
+            color: #d3d3d3;
+      }
 }
 
 @keyframes rest {
