@@ -1,5 +1,5 @@
 
-import { SvgLocation } from './SvgLocation';
+import { SvgLocation } from './blocks/Switch/SvgLocation';
 import { Nav } from './Nav';
 
 
