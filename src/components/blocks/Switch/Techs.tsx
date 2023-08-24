@@ -17,8 +17,7 @@ export function Techs() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-400">
-                If you're unhappy with your purchase for any reason, email us
-                within 90 days and we'll refund you in full, no questions asked.
+                coming soon uwu
               </Disclosure.Panel>
             </>
           )}
@@ -37,8 +36,7 @@ export function Techs() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-400">
-                If you're unhappy with your purchase for any reason, email us
-                within 90 days and we'll refund you in full, no questions asked.
+                coming soon uwu
               </Disclosure.Panel>
             </>
           )}
@@ -57,7 +55,7 @@ export function Techs() {
                 />
               </Disclosure.Button>
               <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-400">
-                No.
+                coming soon uwu
               </Disclosure.Panel>
             </>
           )}
