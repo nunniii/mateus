@@ -204,6 +204,7 @@ header nav ul{
       margin: .2rem 0 .2rem 0;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       list-style: none;
       color: white;
 }
@@ -221,7 +222,7 @@ header nav ul li:hover{
 header nav ul li a{
       text-decoration: none;
       color: white;
-      font-size: 1.2rem;
+      font-size: 1.25rem; /* text-xl in tailwindcss (20px) */
 }
 
 #btn-menu-mobile{
