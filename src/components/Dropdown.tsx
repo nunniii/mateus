@@ -1,6 +1,7 @@
 import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { talk } from '../scripts/comming_soon';
+import '../styles/input.css'
 
 
 interface DropdownProps{
