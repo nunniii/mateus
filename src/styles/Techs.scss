@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@mixin centerIcons{
+    width: 100%;
+    > * {
+        width: 100%;
+        height: 100%;
+        
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin forConteiner{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    .ElixirContainer{
+        @include forConteiner;
+
+        background-color: #9c1fa5;
+        #ElixirIcon{
+            @include centerIcons;
+            background-color: #9c1fa5;
+             
+        }
+    }
+    .ReactContainer{
+        @include forConteiner;
+        background-color: #232340;
+
+        #ReactIcon{
+            @include centerIcons;
+            background-color: #232340;
+    
+        }
+    }
+
+    .RustContainer{
+        @include forConteiner;
+        background-color: #dea584;
+
+        #RustIcon{
+            @include centerIcons;
+            background-color: #dea584;
+        }
+    }
+
+
+    .TypeScriptContainer{
+        @include forConteiner;
+        background-color: #007acc;
+
+        #TypeScriptIcon{
+            @include centerIcons;
+            background-color: #007acc;
+    
+        }
+    }
+    
+    
+    
+
