@@ -1,7 +1,7 @@
 import { Header } from './components/Header';
 import { About } from './components/blocks/About';
 import { More } from './components/blocks/More';
-import { PlusSwitch } from './components/blocks/PlusSwitch';
+import { Switch } from './components/blocks/Switch';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
         <Header />
         <main>
           <About />
-          <PlusSwitch />
+          <Switch />
           <More />
         </main>
       </div>

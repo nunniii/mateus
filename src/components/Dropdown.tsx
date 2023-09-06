@@ -3,13 +3,13 @@ import { Fragment } from 'react'
 import { talk } from '../scripts/comming_soon';
 
 
-interface DropdownTalkProps{
+interface DropdownProps{
   links: { title: string; ref: string; target: string }[];
   title: string;
 }
 
 
-export function DropdownTalk({links, title}: DropdownTalkProps) {
+export function Dropdown({links, title}: DropdownProps) {
   return (
     <div>
       <Popover className="relative">
