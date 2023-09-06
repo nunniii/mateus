@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
-import { Location } from './Switch/Location'
 import '../../styles/input.css'
 import { Discord } from './Switch/Discord';
-import { Techs } from './Switch/Techs';
 
 
 function classNames(...classes: string[]) {
@@ -14,13 +12,12 @@ function classNames(...classes: string[]) {
 
 export function Switch() {
   let [categories] = useState({
-    Tecnologias: [],
     Discord: [],
-    Location: [],
   })
 
   return (
-    <div className="">
+    <div className=' flex flex-col '>
+    <div className="max-w-sm self-center">
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-black/20 p-1">
           {Object.keys(categories).map((category) => (
@@ -41,11 +38,10 @@ export function Switch() {
           ))}
         </Tab.List>
         <Tab.Panels className="mt-2">
-          <Tab.Panel><Techs /></Tab.Panel>
           <Tab.Panel><Discord /></Tab.Panel>
-          <Tab.Panel><Location /></Tab.Panel>
         </Tab.Panels>
       </Tab.Group>
+    </div>
     </div>
   )
 }
