@@ -5,15 +5,17 @@ import { talk } from '../scripts/comming_soon';
 
 interface DropdownTalkProps{
   links: { title: string; ref: string; target: string }[];
+  title: string;
 }
 
-export function DropdownTalk({links}: DropdownTalkProps) {
+
+export function DropdownTalk({links, title}: DropdownTalkProps) {
   return (
     <div>
       <Popover className="relative">
             <Popover.Button
               className="outline-none">
-              <span className="text-xl text-white no-underline">/talk</span>
+              <span className="text-xl text-white no-underline">{title}</span>
               
             </Popover.Button>
             <Transition
