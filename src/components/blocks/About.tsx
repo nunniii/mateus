@@ -22,7 +22,6 @@ export function About() {
               <p>Sinta-se à vontade para entrar em contato para assuntos profissionais. Se você encontrar interesses de pesquisa em comum, não hesite em enviar um <a href="mailto:mateusnss@proton.me">email</a>. Estou sempre aberto a colaborações. uwu</p>
               
               <br/><br/>
->>>>>>> eb91aa140040d50355dd34f5bbcdb432b43a74c6
 
       <div className="h-52">
             <a className="w-4" target="_blank" href="https://discord.com/users/760144171075371009">
