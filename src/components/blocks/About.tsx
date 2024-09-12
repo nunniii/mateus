@@ -1,7 +1,7 @@
 
 import { useTranslation } from 'react-i18next';
 
-<<<<<<< HEAD
+
 export function About() {
   const { t } = useTranslation();
 
@@ -15,7 +15,7 @@ export function About() {
       </p>
       <br />
       <br />
-=======
+
               <p>Eu sou um entusiasta de código aberto, com foco em desenvolvimento web.</p>
               <p>Minhas linguagens de programação de preferência são Rust, C/C++, TypeScript e um pouco de Kotlin e atualmente, estou me dedicando ao estudo de WebAssembly e desenvolvimento mobile.</p>
 
