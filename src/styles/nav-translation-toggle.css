@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* Largura ajustada para acomodar o texto */
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #b60b11; /* Azul quando marcado */
+}
+
+input:not(:checked) + .slider {
+  background-color: #311d74; /* Verde quando não marcado */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider-text {
+  color: white;
+  font-size: 16px; /* Ajuste conforme necessário */
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  text-align: center; /* Alinha o texto centralmente por padrão */
+}
+
+[data-language="en"] .slider-text {
+  left: auto;
+  right: 10px; /* Alinha o texto "en" à direita */
+}
+
+[data-language="pt"] .slider-text {
+  left: 10px; /* Alinha o texto "pt" à esquerda */
+  right: auto;
+}

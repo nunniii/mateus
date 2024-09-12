@@ -1,5 +1,4 @@
 [
-    {"title": "Mail to me uwu", "ref": "mailto:mateusnss@proton.me", "target": ""},
-    {"title": "DM me on twitter", "ref": "#", "target": ""},
+    {"title": "Mail to me", "ref": "mailto:mateusnss@proton.me", "target": ""},
     {"title": "My discrod", "ref": "https://discord.com/users/760144171075371009", "target": "_blank"}
 ]

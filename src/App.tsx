@@ -2,6 +2,8 @@ import { Header } from './components/Header';
 import { About } from './components/blocks/About';
 import { More } from './components/blocks/More';
 
+
+
 function App() {
 
   return (

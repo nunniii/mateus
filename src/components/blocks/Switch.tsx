@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import '../../styles/input.css'
 import { Discord } from './Switch/Discord';
+import { Genshin } from './Switch/Genshin';
 
 
 function classNames(...classes: string[]) {
@@ -13,6 +14,7 @@ function classNames(...classes: string[]) {
 export function Switch() {
   let [categories] = useState({
     Discord: [],
+    Genshin: [],
   })
 
   return (
@@ -39,6 +41,8 @@ export function Switch() {
         </Tab.List>
         <Tab.Panels className="mt-2">
           <Tab.Panel><Discord /></Tab.Panel>
+          <Tab.Panel><Genshin /></Tab.Panel>
+          
         </Tab.Panels>
       </Tab.Group>
     </div>
