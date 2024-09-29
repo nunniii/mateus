@@ -1,6 +1,6 @@
 import '../styles/GettingTouch.scss'
 
-import { Eth } from './ETH'
+import { Eth } from './Eth'
 import { Mail } from './Mail'
 
 export function GettingTouch(){
