@@ -23,14 +23,29 @@
 
    
 
-  <script type="module" crossorigin src="/mateus/assets/index-6adc45b6.js"></script>
-  <link rel="stylesheet" href="/mateus/assets/index-44d40f14.css">
+  <script type="module" crossorigin src="/mateus/assets/index-5085795e.js"></script>
+  <link rel="stylesheet" href="/mateus/assets/index-00264b51.css">
 </head>
 <body>
     <div id="root"></div>
     
     
     <script>
+        function animateTitle(Title, delay) {
+    let counter = 0;
+    let direction = true;
+    aniTitle = setInterval(function () {
+        if (counter == Title.length)
+            direction = false;
+        if (counter == false)
+            direction = true;
+        counter = (direction == true) ? ++counter : --counter;
+        newtitle = (counter == 0) ? "" : Title.slice(0, counter);
+        document.title = newtitle;
+    }, delay)
+}
+
+
         animateTitle("I luv u (/・ω・)/", 260);
     </script> 
 </body>
