@@ -1,20 +1,30 @@
-import { Header } from './components/Header';
-import { About } from './components/blocks/About';
-import { More } from './components/blocks/More';
+import React from 'react';
+import useDeviceType from './hooks/useDeviceType';
+import {AppCell} from './components/AppCell';
+import {AppGetW} from './components/AppGetW';
+import { BackGround } from './components/BackGround';
+
+import './styles/bg.scss'
 
 
-
-function App() {
+const App: React.FC = () => {
+  const deviceType = useDeviceType(); 
 
   return (
-      <div id="main-container">
-        <Header />
-        <main>
-          <About />
-          <More />
-        </main>
+    <>
+      <div>
+        {deviceType === 'mobile' ? <AppCell /> : <AppGetW />}
       </div>
-  )
-}
+      <BackGround />
+    </>
+  );
+};
 
-export default App
+
+
+
+
+export default App;
+
+
+

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+#OldInternetPart{
+    
+
+    margin-bottom: 2rem;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    width: 40rem;
+
+    justify-content: center;
+    align-items: center;
+
+    .gif{
+        border: 1px solid white ;
+    }
+    
+    
+}
+
+
+.rowdd {
+    margin: 2rem 0 2rem 0;
+    width: 80vw;
+    border-width: 1px;
+    border-color: rgba(whitesmoke, .1);
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #OldInternetPart{
+        width: 97vw;
+        padding: 0.3rem;
+
+        margin-bottom: 5rem;
+    }
+
+
+    .rowdd {
+        margin: .5rem 0 1rem 0;
+    }
+}
+

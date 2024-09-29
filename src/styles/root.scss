@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background-color: #100e15;
+    font-family: 
+      -apple-system, /* Fonte usada no macOS e iOS */
+      BlinkMacSystemFont, /* Fonte para navegadores baseados em Blink no macOS */
+      'Segoe UI', /* Windows */
+      Roboto, /* Android */
+      Oxygen, /* Linux */
+      Ubuntu, /* Linux */
+      Cantarell, /* Linux */
+      'Open Sans', /* Fallback para outras plataformas */
+      'Helvetica Neue', /* Outra opção para dispositivos Apple antigos */
+      Arial, /* Fallback genérico */
+      sans-serif; /* Fallback padrão */
+  }
+
+
+
+

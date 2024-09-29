@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.header-icons{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        color: rgba(white, .6);
+    }
+
+    height: 2rem;
+    width: 14rem;    
+    img{
+        width: 2rem;
+    }
+
+    font-size: 14pt;
+
+
+}
+
+#localization{
+    display: flex;
+    align-items: center;
+
+    margin: .5rem 0 .5rem 0;
+    padding: .3rem .9rem .3rem .9rem;
+
+    border-radius: 2rem;
+    background-color: #1f2937;
+    height: 2.1rem;
+    width: 12rem;
+
+
+
+    &:hover{
+        background-color: #2f3946;
+        transition: .2s;
+        animation: ease-in-out;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .header-icons {
+        width: 2rem;
+
+        #localization{
+            display: none;
+
+        }
+    }
+
+}

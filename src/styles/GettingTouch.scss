@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#GettingTouch{
+    padding: 1rem;
+    margin: .5rem 0 .5rem 0;
+
+
+
+    h2{
+        font-size: 2rem;
+        margin-bottom: .7rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    #GettingTouch{
+        width: 97vw;
+    }
+
+}

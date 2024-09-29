@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import '../styles/nav-translation-toggle.css'; // Certifique-se de que o caminho está correto
+import '../styles/nav-translation-toggle.css'; 
 
 export function LanguageToggle() {
   const { i18n } = useTranslation();

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#ContactCard{
+
+    background: linear-gradient(135deg, black, #100e15);
+
+    &:hover{
+        background: linear-gradient(135deg, #000000, #100e15, #000000);
+
+    }
+
+    border: 1px solid rgba(white, .3);
+    padding: 1rem;
+    border-radius: .5rem;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 .5rem 0;
+
+
+
+    div.title{
+        color: rgba(white, .6);
+    }
+
+    #Adress{
+        display: flex;
+        flex-direction: column;
+        word-break: break-all;
+    }
+}
+
+
+.just-a-margin{
+    margin: 0 1rem 0 0;
+}
+
+
+
+

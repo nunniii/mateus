@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#Banners {
+    width: 80vw;
+
+
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+
+    .banner {
+        width: 30rem; /* Largura da div que vai "cortar" a imagem */
+        height: 15rem; /* Altura da div que vai "cortar" a imagem */
+        overflow: hidden; /* Oculta partes da imagem que excedem as dimensões da div */
+        position: relative; /* Permite que a imagem seja posicionada em relação a div */
+        border-radius: 0.5rem; /* Arredondamento dos cantos da div */
+
+        /* Efeito de hover */
+        &:hover {
+            img {
+                filter: blur(5px); /* Aplica um blur na imagem ao passar o mouse */
+            }
+
+            .overlay {
+                opacity: 1; /* Torna o texto visível ao passar o mouse */
+            }
+        }
+
+        /* Estilo da imagem */
+        img {
+            position: absolute; /* Permite que a imagem seja posicionada livremente dentro da div */
+            top: 50%; /* Centraliza a imagem verticalmente */
+            left: 50%; /* Centraliza a imagem horizontalmente */
+            width: auto; /* Largura da imagem para 100% da div */
+            
+            min-width: auto; /* Não aplica restrição mínima na largura */
+            min-height: auto; /* Não aplica restrição mínima na altura */
+            transform: translate(-50%, -50%); /* Ajusta a posição da imagem para centralizá-la */
+            transition: filter 0.3s ease; /* Suaviza a transição do filtro */
+        }
+
+        /* Estilo do overlay para o texto */
+        .overlay {
+            position: absolute; /* Permite posicionar o texto sobre a imagem */
+            top: 0; /* Alinha ao topo da div */
+            left: 0; /* Alinha à esquerda da div */
+            width: 100%; /* Largura total da div */
+            height: 100%; /* Altura total da div */
+            display: flex; /* Usa flexbox para centralizar o texto */
+            align-items: center; /* Centraliza verticalmente */
+            justify-content: center; /* Centraliza horizontalmente */
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+            color: white; /* Cor do texto */
+            opacity: 0; /* Inicialmente oculto */
+            transition: opacity 0.3s ease; /* Suaviza a transição da opacidade */
+        }
+    }
+}

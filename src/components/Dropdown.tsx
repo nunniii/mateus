@@ -1,7 +1,6 @@
 import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
 import { talk } from '../scripts/comming_soon';
-import '../styles/input.css'
 
 
 interface DropdownProps{
@@ -28,7 +27,7 @@ export function Dropdown({links, title}: DropdownProps) {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="bg-black rounded-lg absolute left-full z-10 mt-6 max-w-sm -translate-x-10 transform  sm:px-0 w-max">
+              <Popover.Panel className="bg-black rounded-lg absolute left-full z-10 mt-3 max-w-sm -translate-x-10 transform  sm:px-0 w-max">
                 <div className="overflow-hidden rounded-lg  flex flex-col ring-black ">
                   {
                     links.map((link, index) => (

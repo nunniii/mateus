@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+
+.language-toggle-container{
+  
+}
+
 .switch-container {
   display: flex;
   align-items: center;
@@ -9,7 +15,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px; /* Largura ajustada para acomodar o texto */
+  width: 60px; 
   height: 34px;
 }
 

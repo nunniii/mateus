@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { HeaderIcons } from './blocks/HeaderIcons';
-import '../styles/nav.scss';
+import '../styles/navCell.scss';
 
-export function Nav() {
-  const [navWidth, setNavWidth] = useState(70); // Largura inicial
-  const [navMargin, setNavMargin] = useState(5); // Margem inicial
-  const [navColor, setNavColor] = useState('rgba(0, 0, 0, 0.5)'); // Cor inicial
-  const [navOpacity, setNavOpacity] = useState(1); // Opacidade inicial
+export function NavCell() {
+  const [navWidth, setNavWidth] = useState(85); // Largura inicial de 70vw
+  const [navMargin, setNavMargin] = useState(3.5); // Margem inicial de 5rem
+  const [navColor, setNavColor] = useState('rgba(0, 0, 0, 0.5)'); // Cor inicial com transparência
+  const [navOpacity, setNavOpacity] = useState(1); // Opacidade inicial 100%
   const [navBlur, setNavBlur] = useState(0); // Blur inicial
   const [navBorderColor, setNavBorderColor] = useState('rgba(0, 0, 0, 1)'); // Cor inicial da borda
 
@@ -16,22 +16,22 @@ export function Nav() {
       const maxHeight = window.innerHeight; // Altura da janela para referência
 
       // Cálculo do width e margin
-      let newWidth = Math.min(80, 70 + (scrollTop / maxHeight) * 100); // Cresce até 70vw
-      let newMargin = Math.max(1, 5 - (scrollTop / maxHeight) * 10); // Diminui a margem até 1rem
+      let newWidth = Math.min(90, 70 + (scrollTop / maxHeight) * 100); // Cresce até 100vw
+      let newMargin = Math.max(1, 3.5 - (scrollTop / maxHeight) * 10); // Diminui a margem até 0rem
 
-      // Cálculo da transição de cor (RGB de black para #100e15)
+      // Cálculo da transição de cor (RGB de #000000 para #100e15)
       const maxScroll = Math.min(1, scrollTop / maxHeight); // Valor entre 0 e 1 baseado no scroll
-      const r = Math.round(0 + (16 - 0) * maxScroll); // Transição R (0 -> 16)
-      const g = Math.round(0 + (14 - 0) * maxScroll); // Transição G (0 -> 14)
-      const b = Math.round(0 + (21 - 0) * maxScroll); // Transição B (0 -> 21)
+      const r = Math.round(0 + (16 - 0) * maxScroll); // Transição do R (0 -> 16)
+      const g = Math.round(0 + (14 - 0) * maxScroll); // Transição do G (0 -> 14)
+      const b = Math.round(0 + (21 - 0) * maxScroll); // Transição do B (0 -> 21)
 
       const newColor = `rgba(${r}, ${g}, ${b}, 0.5)`; // Combina o novo valor de cor com transparência
 
       // Cálculo da opacidade e blur
-      const newOpacity = Math.max(0.8, 1 - (scrollTop / maxHeight) * 0.1); // Diminui a opacidade
-      const newBlur = Math.min(70, (scrollTop / maxHeight) * 30); // Aumenta o blur até 70px
+      const newOpacity = Math.max(0.8, 1 - (scrollTop / maxHeight) * 0.1); // Diminui a opacidade até 0.5
+      const newBlur = Math.min(70, (scrollTop / maxHeight) * 30); // Aumenta o blur até 20px
 
-      // Cálculo da borda (de #00 para rgba(#000000 ,.6))
+      // Cálculo da borda (de #000000 para rgba(255, 255, 255, 0.6))
       const borderR = Math.round(0 + (255 - 0) * maxScroll); // Transição do R (0 -> 255)
       const borderG = Math.round(0 + (255 - 0) * maxScroll); // Transição do G (0 -> 255)
       const borderB = Math.round(0 + (255 - 0) * maxScroll); // Transição do B (0 -> 255)
@@ -51,7 +51,7 @@ export function Nav() {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Remover o listener quando o componente desmonta
+      window.removeEventListener('scroll', handleScroll); // Remove o listener quando o componente desmonta
     };
   }, []);
 
@@ -68,7 +68,6 @@ export function Nav() {
       }}
     >
       <ul>
-        <li><a href="#">/</a></li>
         <li><a href="https://nunito-blog.vercel.app/">/blog</a></li>
         <li><a href="https://nunito-blog.vercel.app/slug/nuniLab">/notes</a></li>
       </ul>

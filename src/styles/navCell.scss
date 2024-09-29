@@ -1,0 +1,63 @@
+
+nav {
+
+    width: 70vw; // Largura inicial controlada pelo React
+    background-color: rgba(#000000, 0.7);
+    box-shadow: 0 0 1px rgba(black, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    transition: width 0.3s ease, margin 0.3s ease; // Transições suaves para largura e margem
+    z-index: 10;
+    backdrop-filter: blur(10px);
+  
+    display: flex;
+    justify-content: space-between; // Alinha os itens internamente
+    align-items: center;
+    font-size: 16pt !important;
+    color: white !important;
+  
+    padding: 0.5rem 0.3rem;
+  
+    border-radius: 0.5rem;
+    border: 1px solid rgba(#100e15, 1);
+    
+    // Ajuste para centralizar a nav
+    left: 50%;
+    transform: translateX(-50%); // Centraliza horizontalmente a nav
+  
+    ul {
+      display: flex;
+      width: 65vw;
+      gap: 0.5rem;
+      align-items: center;
+      justify-items: left;
+  
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+  
+      li {
+        margin: 0;
+        list-style: none;
+        width: 4.5rem;
+        border-radius: 0.25rem;
+        padding: 0 .5rem 0 .5rem;
+
+        text-align: center;
+  
+        &:hover {
+          background-color: rgba(#d6d5db, 0.1);
+        }
+      }
+    }
+  }
+  
+
+
+  
+  
+
+
