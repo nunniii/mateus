@@ -9,7 +9,6 @@
 
 body {
 
-    background-color: #100e15;
     font-family: 
       -apple-system, /* Fonte usada no macOS e iOS */
       BlinkMacSystemFont, /* Fonte para navegadores baseados em Blink no macOS */
@@ -22,8 +21,21 @@ body {
       'Helvetica Neue', /* Outra opção para dispositivos Apple antigos */
       Arial, /* Fallback genérico */
       sans-serif; /* Fallback padrão */
+
+
+      // Substitua pelo caminho da sua imagem
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%; // Ajusta conforme necessário
+    height: 100vh; // Pode ajustar a altura desejada
+    
+ 
+
   }
 
 
 
+
+  
 

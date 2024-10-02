@@ -6,11 +6,14 @@ import { Mail } from './Mail'
 export function GettingTouch(){
     return (
         <div id="GettingTouch" className='section-card'>
-            <h2>Getting touch</h2>
+            <div className='content'>
+                <h2>Getting touch</h2>
+                <Mail />
+                <Eth />
+
+            </div>
             
 
-            <Mail />
-            <Eth />
 
             {/* <div className="h-52 mt-10 flex justify-center">
                 <a target="_blank" href="https://discord.com/users/760144171075371009">

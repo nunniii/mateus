@@ -1,0 +1,118 @@
+/* Arquivo themes.scss */
+
+/* Tema Claro */
+body.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --nav-background-color: rgba(255, 255, 255, 0.1);
+  --nav-border-color: rgba(0, 0, 0, 0.2);
+  --header-icons-color: rgba(0, 0, 0, 0.6);
+  --localization-background: #f3f4f6;
+  --localization-hover-background: #d1d5db;
+  --techs-background: linear-gradient(135deg, #ffffff, #f1f1f1, #ffffff);
+  --techs-hover-background: linear-gradient(135deg, #e5e5e5, #cccccc, #e5e5e5);
+  --link-color: #000000;
+  --border-li: #00000012;
+}
+
+/* Tema Escuro */
+body.dark {
+  --background-color: #100e15;
+  --text-color: #ffffff;
+  --nav-background-color: rgba(0, 0, 0, 0.1);
+  --nav-border-color: rgba(255, 255, 255, 0.2);
+  --header-icons-color: rgba(255, 255, 255, 0.6);
+  --localization-background: #0e1116;
+  --localization-hover-background: #2f3946;
+  --techs-background: linear-gradient(135deg, #000000, #100e15, #000000);
+  --techs-hover-background: linear-gradient(135deg, #000000, #100e15, #000000);
+  --link-color: #ffffff;
+  --border-li: #00000000;
+
+}
+
+/* Estilos globais aplicando as variáveis */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  border-color: var(--nav-border-color);
+  ul{
+    li{
+      a{
+        
+        color: rgba(var(--text-color), .5);
+      }
+    }
+  }
+
+  
+}
+
+.header-icons a {
+  color: var(--header-icons-color);
+  .gh-icon{
+    color: var(--text-color);
+  }
+}
+
+#localization {
+  background-color: var(--localization-background);
+
+  &:hover {
+    background-color: var(--localization-hover-background);
+  }
+
+  
+}
+
+.Techs {
+  background: var(--techs-background);
+  border: 1px solid var(--nav-border-color);
+
+
+  &:hover {
+    background: var(--techs-hover-background);
+  }
+  color: var(--text-color);
+
+  svg{
+    fill: var(--text-color);
+  }
+}
+
+#ContactCard{
+  background: var(--techs-background);
+
+  color: var(--text-color);
+  border: 1px solid var(--nav-border-color);
+  svg{
+    fill: var(--text-color);
+  }
+
+  div.title{
+    color: var(--header-icons-color); 
+
+  }
+
+}
+
+
+nav a {
+  color: var(--link-color);
+}
+
+nav ul li {
+  color: var(--text-color);
+
+  
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  
+  border: 1px solid var(--border-li);
+}

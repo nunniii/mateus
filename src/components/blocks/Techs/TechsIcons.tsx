@@ -1,5 +1,4 @@
 import { DeviconPlainElixir } from './DeviconPlainElixir';
-import { MdiLanguageC } from './MdiLanguageC';
 import { FileIconsOcaml } from './FileIconsOcaml';
 import { SimpleIconsSqlite } from './SimpleIconsSqlite';
 import { Tex } from './Tex';
@@ -19,51 +18,54 @@ import { DiNodejsSmall } from "react-icons/di";
 import { DiGit } from "react-icons/di";
 import { DiLinux } from "react-icons/di";
 
+import { Icon } from '@iconify-icon/react';
+
 export function TechsIcons({ state }: { state: 'open' | 'close' }) {
   return (
     <>
       {state === 'open' ? (
         // Renderiza apenas os ícones
-        <div className="Techs mt-6 mb-6 flex flex-wrap items-center justify-center gap-1 text-white">
+        <div className="Techs mt-6 mb-6 flex flex-wrap items-center justify-center gap-1 ">
           <FaRust size={40} />
           <BiLogoTypescript size={40} />
-          <RiJavascriptFill size={40} />
+          <Icon icon="simple-icons:go" width="40" height="40"  />
+          <Icon icon="cib:deno" width="40" height="40" />
+          <Tex />
           <FaReact size={40} />
-          <SiWebassembly size={40} />
-          <SiPrisma size={40} />
-          <FaPython size={40} />
-          <DiRuby size={40} />
           <DiSass size={40} />
+          <DiRuby size={40} />
+          <FaPython size={40} />
+          <FileIconsOcaml />
+          <Icon icon="ant-design:docker-outlined" width="40" height="40"  />
+          <SiWebassembly size={40} />
+          <DeviconPlainElixir />
+          <RiJavascriptFill size={40} />
+          <SiPrisma size={40} />
           <DiNodejsSmall size={40} />
           <DiGit size={40} />
           <DiLinux size={40} />
           <SimpleIconsSqlite />
-          <DeviconPlainElixir />
-          <MdiLanguageC />
-          <FileIconsOcaml />
-          <Tex />
-        </div>
-      ) : (
-        <div className="Techs mt-6 mb-6 flex flex-wrap items-center justify-center gap-1 text-white">
-          <FaRust size={40} />
-          <BiLogoTypescript size={40} />
-          <RiJavascriptFill size={40} />
-          <FaReact size={40} />
-          <SiWebassembly size={40} />
-          <SiPrisma size={40} />
-          <FaPython size={40} />
-          <DiRuby size={40} />
-          <DiSass size={40} />
-          <DiNodejsSmall size={40} />
-          <DiGit size={40} />
-          <DiLinux size={40} />
-          <SimpleIconsSqlite />
-          <DeviconPlainElixir />
-          <MdiLanguageC />
-          <FileIconsOcaml />
-          <Tex />
+          <Icon icon="simple-icons:fresh" width="40" height="40"  />
           <Illustrator />
           <Postgresql />
+          <Icon icon="ri:java-fill" width="40" height="40"  />
+        </div>
+      ) : (
+        <div className="Techs mt-6 mb-6 flex flex-wrap items-center justify-center gap-1 ">
+          <FaRust size={40} />
+          <BiLogoTypescript size={40} />
+          <Icon icon="simple-icons:go" width="40" height="40"  />
+          <Icon icon="cib:deno" width="40" height="40" />
+          <Tex />
+          <FaReact size={40} />
+          <DiSass size={40} />
+          <DiRuby size={40} />
+          <FaPython size={40} />
+          <FileIconsOcaml />
+          <Icon icon="ant-design:docker-outlined" width="40" height="40"  />
+          <SiWebassembly size={40} />
+          <DeviconPlainElixir />
+          
         </div>
       )}
     </>

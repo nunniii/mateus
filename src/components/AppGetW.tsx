@@ -16,7 +16,7 @@ export function AppGetW() {
         <Card />
         <GettingTouch />
 
-        <div className='text-white/40 mt-20'>
+        <div className=' mt-20'>
           Mateus Nunes &#183; Estudante da Luz ✨
         </div>
         <OldInternetPart />

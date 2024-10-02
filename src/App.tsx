@@ -1,11 +1,9 @@
 import React from 'react';
 import useDeviceType from './hooks/useDeviceType';
-import {AppCell} from './components/AppCell';
-import {AppGetW} from './components/AppGetW';
-import { BackGround } from './components/BackGround';
+import { AppCell } from './components/AppCell';
+import { AppGetW } from './components/AppGetW';
 
-import './styles/bg.scss'
-
+import './styles/themes.scss';
 
 const App: React.FC = () => {
   const deviceType = useDeviceType(); 
@@ -15,16 +13,8 @@ const App: React.FC = () => {
       <div>
         {deviceType === 'mobile' ? <AppCell /> : <AppGetW />}
       </div>
-      <BackGround />
     </>
   );
 };
 
-
-
-
-
 export default App;
-
-
-
